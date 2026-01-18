@@ -1,0 +1,19 @@
+import { Geist, Geist_Mono, Jockey_One } from "next/font/google";
+import "./globals.css";
+
+
+const jockey_one = Jockey_One({
+    weight:[ "400"],
+    subsets:["latin"]
+})
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body 
+      className={`${jockey_one.className}`}>      
+        {children}
+      </body>
+    </html>
+  );
+}
